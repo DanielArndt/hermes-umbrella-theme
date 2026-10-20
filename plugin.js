@@ -898,13 +898,6 @@ export default {
               label: 'Chat backdrop watermark',
               onChange: val => updatePrefs({ showBackdrop: val })
             }),
-            jsx(ToggleRow, {
-              checked: backdropSource === 'avatar',
-              description:
-                "Use the active profile's avatar as the centered chat backdrop instead of the Umbrella Corporation logo.",
-              label: 'Use profile avatar as backdrop',
-              onChange: val => updatePrefs({ backdropSource: val ? 'avatar' : 'umbrella' })
-            }),
             jsx(ListRow, {
               title: 'Backdrop watermark source',
               description:
